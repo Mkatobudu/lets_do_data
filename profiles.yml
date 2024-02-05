@@ -1,0 +1,26 @@
+ahonavictor:
+  outputs:
+    dev:
+      dbname: ny_taxi
+      host: localhost
+      pass: ahona
+      port: 5432
+      schema: taxi_rides_all
+      threads: 1
+      type: postgres
+      user: ahona
+  target: dev
+pg-dbt-workshop:
+  outputs:
+    dev:
+      connect_timeout: 10
+      dbname: ny_taxi
+      host: localhost
+      keepalives_idle: 0
+      password: ahona
+      port: 5432
+      schema: taxi_rides_all
+      threads: 1
+      type: postgres
+      user: ahona
+  target: dev
